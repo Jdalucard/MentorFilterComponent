@@ -23,6 +23,8 @@
   font-family: var(--ff);
 }
 .filter {
+  position: relative;
+  z-index: 1;
   background: var(--Background);
   display: flex;
   justify-content: space-between;

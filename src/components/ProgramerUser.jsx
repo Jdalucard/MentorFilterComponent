@@ -29,8 +29,8 @@ export const ProgramerUser = () => {
                       <tbody>
                         <tr className="box">
                           <td>{user.company}</td>
-                          {user.new && <p>New!</p>}
-                          {user.featured && <p>Featured</p>}
+                          {user.new && <td>New!</td>}
+                          {user.featured && <td>Featured</td>}
                         </tr>
                         <tr>
                           <td>

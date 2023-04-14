@@ -11,14 +11,16 @@ const ProgramerFilter = () => {
       {filterList.length > 0 ? (
         <header className="filter">
           <div className="map">
-            {filterList.map((buton) => {
+            {filterList.map((buton, index) => {
               return (
                 <>
                   <div
                     className="filter-container"
                     onClick={() => clearFilterList(buton)}
                   >
-                    <button className="boton-filter">{buton}</button>
+                    <button key={index} className="boton-filter">
+                      {buton}
+                    </button>
                     <img src={icondelete} alt="delete" />
                   </div>
                 </>
